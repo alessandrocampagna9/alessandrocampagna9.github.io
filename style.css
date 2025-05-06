@@ -1,0 +1,322 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #f0f0f0;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ccc;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .contacts, .samples {
+    text-align: center;  /* Centro la sezione */
+  }
+  
+  .contacts p, .samples p {
+    margin: 10px 0;
+    font-size: 0.8rem; /* Riduce la dimensione del testo */
+  }
+  
+  .contacts a, .samples a {
+    font-size: 0.7rem; /* Ancora più piccolo per i link */
+  }
+  
+  .contacts a:hover, .samples a:hover {
+    color: #ffffff; /* Cambia colore su hover */
+  }
+  
+
+
+  body {
+    background-color: #202020;
+  }
+  
+  .items {
+    flex-flow: row wrap
+    padding: 1rem;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around
+  }
+  
+  .item {
+    transition: all 0.5s ease-in-out;
+    width: 100px;
+    height: 100px;
+    background-color: #404040;
+  }
+  
+  .item:hover {
+    background-color: #80ffcc;
+    transform: scale(1.2);
+  }
+  
+  .item:hover + * {
+    background-color: #60877B;
+    transform: scale(1.1);
+  }
+  
+  .item:has(+ *:hover) {
+    background-color: #60877B;
+    transform: scale(1.1);
+  }
+  
+  .item:has(+ * + *:hover) {
+    background-color: #4A5A4A;
+    transform: scale(1.05);
+  }
+  
+  .item:hover + * + * {
+    background-color: #4A5A4A;
+    transform: scale(1.05);
+  }
+
+  
+  .pokeball {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 350px;
+  }
+  
+  .center-black {
+    position: absolute;
+    top: 25px; 
+    left: 25px; 
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50px 50px 0 0;
+  }
+  
+  .top, .bottom {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 50px 50px 0 0;
+    transform-origin: center bottom;
+    transition: transform 0.3s ease;
+  }
+  
+  .bottom {
+    top: 50px;
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+    transform-origin: center top;
+  }
+  
+  .center-button {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .center-line {
+    position: absolute;
+    top: 50px;
+    width: 105px;
+    height: 5px;
+    background-color: black;
+  }
+  
+  .pokeball.open .top {
+    transform: translateY(-25px);
+  }
+  
+  .pokeball.open .bottom {
+    transform: moveDown(5px);
+  }
+  
+  
+  .pokeball {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+
+ /* Stile del contenitore principale */
+/* Contenitore principale */
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Ridotto ulteriormente l'altezza per avvicinare gli elementi */
+    font-size: 2rem;
+    margin-top: 0; /* Rimosso il margine superiore */
+    margin-bottom: 0; /* Rimosso il margine inferiore */
+    flex-direction: column; /* Aggiunta la direzione verticale per disporre gli elementi più vicini */
+  }
+  
+  /* Stile del numero */
+  #counter {
+    font-size: 3rem;
+    transition: transform 0.2s ease;
+    margin: 0 20px; /* Ridotto lo spazio ai lati */
+  }
+  
+  /* Stile dei bottoni */
+  .btn {
+    background-color: #8f8f8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  
+  /* Stile dei bottoni */
+  .btn {
+    background-color: #8f8f8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  /* Hover sui bottoni */
+  .btn:hover {
+    background-color: #535353;
+  }
+  
+  /* Stile del numero */
+  #counter {
+    font-size: 3rem;
+    transition: transform 0.2s ease;
+    margin: 0 30px; /* Aggiungi spazio ai lati del numero */
+  }
+  
+  /* Stile delle Pokeball */
+  .pokeball {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 45px; /* Ridotto il margine superiore per avvicinarla in verticale */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Altri stili delle Pokeball */
+  .center-black {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50px 50px 0 0;
+  }
+  
+  .top, .bottom {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 50px 50px 0 0;
+    transform-origin: center bottom;
+    transition: transform 0.3s ease;
+  }
+  
+  .bottom {
+    top: 50px;
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+    transform-origin: center top;
+  }
+  
+  .center-button {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .center-line {
+    position: absolute;
+    top: 50px;
+    width: 105px;
+    height: 5px;
+    background-color: black;
+  }
+  
+  .pokeball.open .top {
+    transform: translateY(-25px);
+  }
+  
+  .pokeball.open .bottom {
+    transform: moveDown(5px);
+  }
+
+
+  
