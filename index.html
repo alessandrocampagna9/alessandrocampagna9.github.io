@@ -6,6 +6,7 @@
   <title>ALESSANDRO CAMPAGNA | Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="container">
@@ -14,45 +15,71 @@
       <p class="subtitle">Web Developer</p>
     </header>
 
+    <div class="pokeball">
+      <div class="top"></div>
+      <div class="bottom"></div>
+      <div class="center-button"></div>
+      <div class="center-line"></div>
+    </div>
+
+    <div class="items">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
     <section class="samples">
         <h2>Samples</h2>
     </section>
 
-      <div class="pokeball">
-        <div class="top"></div>
-        <div class="bottom"></div>
-        <div class="center-button"></div>
-        <div class="center-line"></div>
-      </div>
 
-      <div class="counter-container">
+    <nav>
+      <button onclick="showProject('colorPicker')">Color Picker</button>
+      <button onclick="showProject('clock')">Orologio</button>
+      <button onclick="showProject('dice')">Lancio Dado</button>
+      <button onclick="showProject('todo')">To-Do List</button>
+      <button onclick="showProject('calc')">Calcolatrice</button>
+      <button onclick="showProject('modal')">Modal</button>
+      <button onclick="showProject('countdown')">Countdown</button>
+    </nav>
+  
+    <section id="projects">
+      <!-- Progetti caricati via JS -->
+    </section>
+
+
+      <!-- <div class="counter-container">
         <button class="btn" id="increase">+</button>
         <span id="counter">0</span>
         <button class="btn" id="decrease">-</button>
-      </div>
+      </div> -->
 
-      <div class="items">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-      </div>
-      
+      <section class="screenshots-gallery">
+        <h2>Spells n Sheet - Screenshots</h2>
+        <div class="gallery-track">
+          <img src="screenshots/Screenshot1.png" alt="Screenshot 1">
+          <img src="screenshots/Screenshot2.png" alt="Screenshot 2">
+          <img src="screenshots/Screenshot3.png" alt="Screenshot 3">
+          <img src="screenshots/Screenshot4.png" alt="Screenshot 4">
+          <img src="screenshots/Screenshot5.png" alt="Screenshot 5">
+        </div>
+      </section>
 
 
-      <script src="script.js"></script>
+
 
     <section class="contacts">
       <h2>Contatti</h2>

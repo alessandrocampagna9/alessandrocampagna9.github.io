@@ -20,6 +20,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     margin: 0;
+    margin-bottom: 15px;
   }
   
   .subtitle {
@@ -127,7 +128,8 @@ body {
     width: 100px;
     height: 100px;
     cursor: pointer;
-    margin-top: 350px;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
   
   .center-black {
@@ -256,9 +258,10 @@ body {
     width: 100px;
     height: 100px;
     cursor: pointer;
-    margin-top: 45px; /* Ridotto il margine superiore per avvicinarla in verticale */
+    margin-top: 25px; /* Ridotto il margine superiore per avvicinarla in verticale */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
   }
   
   /* Altri stili delle Pokeball */
@@ -319,4 +322,91 @@ body {
   }
 
 
+  body {
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
   
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  input, button, select {
+    margin: 5px;
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Galleria screenshots */
+.screenshots-gallery {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.gallery-track {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.gallery-track img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-track img:hover {
+  transform: scale(1.05);
+}
