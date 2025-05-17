@@ -1,9 +1,4 @@
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #000;
-    color: #f0f0f0;
-    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-  }
+
   
   .container {
     max-width: 800px;
@@ -76,14 +71,8 @@ body {
     color: #ffffff; /* Cambia colore su hover */
   }
   
-
-
-  body {
-    background-color: #202020;
-  }
   
   .items {
-    flex-flow: row wrap
     padding: 1rem;
     display: flex;
     gap: 15px;
@@ -321,13 +310,6 @@ body {
     transform: moveDown(5px);
   }
 
-
-  body {
-    font-family: sans-serif;
-    padding: 20px;
-    text-align: center;
-  }
-  
   h1 {
     margin-bottom: 20px;
   }
@@ -409,4 +391,13 @@ body {
 
 .gallery-track img:hover {
   transform: scale(1.05);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #202020;
+  color: #f0f0f0;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  padding: 20px;
+  text-align: center;
 }
